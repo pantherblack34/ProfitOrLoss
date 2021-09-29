@@ -27,7 +27,7 @@ label{
 #input-num{
     display: block;
     text-align: center;
-    width: 20%;
+    width: 30%;
     margin: auto;
     height: 3vh;
     margin-top: 10px;
@@ -37,7 +37,7 @@ label{
 #stock-num{
     display: block;
     text-align: center;
-    width: 20%;
+    width: 30%;
     margin: auto;
     height: 3vh;
     margin-top: 10px;
@@ -47,7 +47,7 @@ label{
 #current-num{
     display: block;
     text-align: center;
-    width: 20%;
+    width: 30%;
     margin: auto;
     height: 3vh;
     margin-top: 10px;
@@ -57,7 +57,7 @@ label{
 #tellbtn{
     display: block;
     text-align: center;
-    width: 15%;
+    width: 20%;
     margin: auto;
     height: 5vh;
     margin-top: 10px;
