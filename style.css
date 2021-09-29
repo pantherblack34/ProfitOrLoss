@@ -1,0 +1,78 @@
+body{
+    background-color: mediumseagreen;
+    width: 45%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 25px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#input-num{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    height: 3vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#stock-num{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    height: 3vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#current-num{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    height: 3vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#tellbtn{
+    display: block;
+    text-align: center;
+    width: 15%;
+    margin: auto;
+    height: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#output-text{
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    height: 10vh;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
