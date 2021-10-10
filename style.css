@@ -1,7 +1,7 @@
 body{
     background-color: mediumseagreen;
     width: 45%;
-    height: 85vh;
+    height: 90vh;
     margin: auto;
     margin-top: 25px;
     border: 5px solid black;
@@ -24,7 +24,7 @@ label{
     border-radius: 10px;
 }
 
-#input-num{
+#cost-num{
     display: block;
     text-align: center;
     width: 30%;
@@ -44,7 +44,7 @@ label{
     margin-bottom: 10px;
 }
 
-#current-num{
+#sell-num{
     display: block;
     text-align: center;
     width: 30%;
@@ -67,8 +67,8 @@ label{
 
 #output-text{
     display: block;
-    text-align: center;
-    width: 40%;
+    text-align: justify;
+    width: 45vw;
     margin: auto;
     height: 10vh;
     margin-top: 25px;

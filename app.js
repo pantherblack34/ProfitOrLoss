@@ -1,33 +1,37 @@
-const inputNum = document.querySelector('#input-num');
+const costNum = document.querySelector('#cost-num');
 
 const stockNum = document.querySelector('#stock-num');
 
-const currentNum = document.querySelector('#current-num');
+const sellNum = document.querySelector('#sell-num');
 
 const priceTell = document.querySelector('#tellbtn');
 
 const output = document.querySelector('#output-text');
 
-function calcProfitOrLoss(initial, quantity, current) {
+function calcProfitOrLoss(cost, quantity, sell) {
 
-    if (initial > current) {
-        let loss = ((initial - current) * quantity);
-        let lossPercent = ((loss / initial) * 100);
-        let lossPer = lossPercent.toFixed(2);
-        showOutput('You have recieved a loss of ' + loss + 'Rs/- and the loss percentage is ' + lossPer + '%.');
+    if(cost > 0 && quantity > 0 && sell > 0){
+            if (cost > sell) {
+                let loss = ((cost - sell) * quantity);
+                let lossPercent = ((cost - sell / cost) * 100);
+                let lossPer = lossPercent.toFixed(2);
+                return  showOutput('You have recieved a loss of ' + loss + 'Rs/- and the loss percentage is ' + lossPer + '%.');
 
-    } 
-    else if (current > initial) 
-    {
-        let profit = ((current - initial) * quantity);
-        let profitPercent = ((profit / initial) * 100);
-        let profitPer = profitPercent.toFixed(2);
-        showOutput('You have recieved a profit of ' + profit + 'Rs/- and the profit percentage is ' + profitPer + '%.');
-    } 
-    else 
-    {
-        showOutput('You have neither recieved a LOSS nor PROFIT.You HAVE what You HAD.')
-    }
+            } 
+            else if (sell > cost) 
+            {
+                let profit = ((sell - cost) * quantity);
+                let profitPercent = ((sell - cost / cost) * 100);
+                let profitPer = profitPercent.toFixed(2);
+                return showOutput('You have recieved a profit of ' + profit + 'Rs/- and the profit percentage is ' + profitPer + '%.');
+            } 
+            else 
+            {
+                return showOutput('You have neither recieved a LOSS nor PROFIT.You HAVE what You HAD.')
+            }
+    }else{
+        return showOutput('PLEASE ENTER POSITIVE VALUE');
+    }    
 }
 
 function showOutput(msg){
@@ -37,9 +41,9 @@ function showOutput(msg){
 
 
 function clickHandler() {
-    let cost = Number(inputNum.value);
+    let cost = Number(costNum.value);
     let quant = Number(stockNum.value);
-    let sell = Number(currentNum.value);
+    let sell = Number(sellNum.value);
 
     calcProfitOrLoss(cost, quant, sell);
 }
